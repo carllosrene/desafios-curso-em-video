@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Mega</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Sorteio de Números</h1>
+        <form>
+            <p>O computador vai sortear 6 números. Tente adivinhá-los!</p>
+            <div class="form_item1">
+                <label for="input_number">Digite 6 números entre 1 e 60:</label>
+                <input type="number" name="input_number" id="input_number">
+                <button type="button" class="btn_add" onclick="addNumber()">Adicionar</button>
+            </div>
+
+            <div>
+                <select name="number_list" id="number_list" size="6"></select>
+            </div>
+
+            <div>
+                <button type="button" class="btn_finish" onclick="finish()">Finalizar</button>
+            </div>
+
+            <div id="result">
+
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
